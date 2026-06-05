@@ -1,0 +1,123 @@
+# How to Run the Animations
+
+All animations in this repository are built using **Manim**.
+
+---
+
+## 1. Clone the Repository
+
+```bash
+git clone https://github.com/Fortnight-wow/Visual-Mathematics-of-Finance.git
+
+cd Visual-Mathematics-of-Finance
+```
+
+---
+
+## 2. Install Dependencies
+
+Install all required packages:
+
+```bash
+pip install -r requirements.txt
+```
+
+or manually:
+
+```bash
+pip install manim numpy
+```
+
+---
+
+## 3. Render an Animation
+
+The general format is:
+
+```bash
+manim [quality] animations/<file_name>.py <SceneName>
+```
+
+Example:
+
+```bash
+manim -pqh animations/brownian_motion.py BrownianMotion
+```
+
+---
+
+## Quality Options
+
+| Flag | Quality |
+|--------|----------|
+| `-pql` | Low Quality (Fast) |
+| `-pqm` | Medium Quality |
+| `-pqh` | High Quality |
+| `-pqk` | 4K Quality |
+
+Example:
+
+```bash
+manim -pqk animations/geometric_brownian_motion.py GeometricBrownianMotion
+```
+
+---
+
+## Available Animations
+
+### Brownian Motion
+
+```bash
+manim -pqh animations/brownian_motion.py BrownianMotion
+```
+
+### Geometric Brownian Motion
+
+```bash
+manim -pqh animations/geometric_brownian_motion.py GeometricBrownianMotion
+```
+
+### Ito's Lemma
+
+```bash
+manim -pqh animations/ito_lemma.py ItoLemma
+```
+
+### Black-Scholes PDE
+
+```bash
+manim -pqh animations/black_scholes_pde.py BlackScholesPDE
+```
+
+### Delta Hedging
+
+```bash
+manim -pqh animations/delta_hedging.py DeltaHedging
+```
+
+---
+
+## Output Location
+
+Rendered videos are automatically saved by Manim inside:
+
+```text
+media/
+└── videos/
+```
+
+The exact path depends on the quality selected.
+
+---
+
+## Recommended Learning Order
+
+If you are new to quantitative finance, watch the animations in this order:
+
+1. Brownian Motion
+2. Geometric Brownian Motion
+3. Ito's Lemma
+4. Black-Scholes PDE
+5. Delta Hedging
+
+This follows the same progression used in many quantitative finance courses.
