@@ -20,6 +20,14 @@ This repository is my attempt to make those ideas easier to understand through a
 
 ---
 
+## Quick Start
+
+Clone the repository:
+
+```bash
+git clone https://github.com/Fortnight-wow/Visual-Mathematics-of-Finance.git
+cd Visual-Mathematics-of-Finance
+
 ## Current Animations
 
 ### Stochastic Processes
